@@ -6,7 +6,7 @@ public class WhileLoopPractice {
 
 	public static void main(String[] args) {
 
-		@SuppressWarnings("resource")
+		@SuppressWarnings({ "resource", "unused" })
 		Scanner input = new Scanner(System.in);
 
 		// Prompt user for message to display 5 times.
@@ -25,16 +25,16 @@ public class WhileLoopPractice {
 		int secretNumber = (int)(Math.random() * 10 + 1);
 		System.out.println(secretNumber);
 		
-//		System.out.println ("Guess the number.");
-//		System.out.println("Enter your guess: ");
-//		int guess = input.nextInt();
-//
-//		while (guess != secretNumber) {
-//			System.out.println("Incorrect...guess again ");
-//			guess = input.nextInt();
-//		}
-//
-//		System.out.println("You guessed it...great job");
-//
+		System.out.println ("Guess the number.");
+		System.out.println("Enter your guess: ");
+		int guess = input.nextInt();
+
+		while (guess != secretNumber) {
+			System.out.println("Incorrect...guess again ");
+			guess = input.nextInt();
+		}
+
+		System.out.println("You guessed it...great job");
+
 	}
 }
